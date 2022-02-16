@@ -19,12 +19,12 @@
         <section class="grid grid-col-1 md:grid-cols-2 gap-4 mb-4">
 
             <!-- image part -->
-            <div class="mt-10 mx-5 md:ml-5">
-                <img src="image/balancesheet.jpg" alt="">
+            <div class=" mt-10 mx-5 md:ml-5">
+                <img class="md:h-screen" src="image/balance.jpg" alt="">
             </div>
 
             <!-- statement -->
-            <div class="bg-slate-200 mt-10 rounded mx-5 md:mr-5">
+            <div class="md:h-screen bg-slate-200 mt-10 rounded mx-5 md:mr-5">
                 <div class="flex flex-col items-center">
 
                     <!-- income -->
@@ -55,9 +55,9 @@
                     </button>
 
                     <!-- balance -->
-                    <h3 class="text-center text-3xl font-semibold mb-4">Total Expenses: € <span id="expenses">00</span>
+                    <h3 class="text-center text-2xl font-semibold mb-4">Total Expenses: € <span id="expenses">00</span>
                     </h3>
-                    <h3 class="text-center text-3xl font-semibold mb-4">Balance: € <span id="balance">00</span></h3>
+                    <h3 class="text-center text-2xl font-semibold mb-4">Balance: € <span id="balance">00</span></h3>
 
                     <!-- saving calculation -->
                     <div class="mb-4">
@@ -80,6 +80,24 @@
                 </div>
             </div>
         </section>
+
+        <!-- error messages -->
+        <div class="flex justify-end gap-2">
+            <p id="error-number" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">please
+                input
+                positive
+                number
+            </p>
+            <p id="error-string" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">please
+                input number
+            </p>
+            <p id="error-expenses" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">Your
+                income is low.
+            </p>
+            <p id="error-saving" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">Balance is
+                low.
+            </p>
+        </div>
     </main>
 
 
