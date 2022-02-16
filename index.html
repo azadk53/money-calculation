@@ -31,30 +31,33 @@
                     <h3 class="text-center text-3xl font-semibold mb-4 pt-5">Income</h3>
                     <div class="mb-4">
                         <p class="font-semibold inline">income:</p>
-                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="income money">
+                        <input id="income" type="text" class="border border-gray-400 rounded px-2"
+                            placeholder="income money">
                     </div>
 
                     <!-- expenses calculation -->
                     <h3 class="text-center text-3xl font-semibold mb-4">Expenses</h3>
                     <div class=" mb-4">
                         <p class="font-semibold inline">Food:</p>
-                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="food">
+                        <input id="food" type="text" class="border border-gray-400 rounded px-2" placeholder="food">
                     </div>
                     <div class="mb-4">
                         <p class="font-semibold inline">Rent:</p>
-                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="rent">
+                        <input id="rent" type="text" class="border border-gray-400 rounded px-2" placeholder="rent">
                     </div>
                     <div class="mb-4">
                         <p class="font-semibold inline">Clothes:</p>
-                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="clothes">
+                        <input id="clothes" type="text" class="border border-gray-400 rounded px-2"
+                            placeholder="clothes">
                     </div>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button id="calculate" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Calculate
                     </button>
 
                     <!-- balance -->
-                    <h3 class="text-center text-3xl font-semibold mb-4">Total Expenses: € <span>00</span></h3>
-                    <h3 class="text-center text-3xl font-semibold mb-4">Balance: € <span>00</span></h3>
+                    <h3 class="text-center text-3xl font-semibold mb-4">Total Expenses: € <span id="expenses">00</span>
+                    </h3>
+                    <h3 class="text-center text-3xl font-semibold mb-4">Balance: € <span id="balance">00</span></h3>
 
                     <!-- saving calculation -->
                     <div class="mb-4">
@@ -74,6 +77,9 @@
             </div>
         </section>
     </main>
+
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
