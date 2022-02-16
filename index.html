@@ -16,31 +16,60 @@
     </header>
 
     <main>
-        <section class="grid grid-cols-2 gap-4">
+        <section class="grid grid-cols-2 gap-4 mb-4">
+
             <!-- image part -->
             <div class="mt-10 ml-5">
                 <img src="image/balancesheet.jpg" alt="">
             </div>
-            <div class="bg-slate-200 mt-10">
-                <div class="px-10">
-                    <h3 class="text-center text-3xl font-semibold mb-4">Income</h3>
+
+            <!-- statement -->
+            <div class="bg-slate-200 mt-10 rounded mr-5">
+                <div class="flex flex-col items-center">
+
+                    <!-- income -->
+                    <h3 class="text-center text-3xl font-semibold mb-4 pt-5">Income</h3>
                     <div class="mb-4">
-                        <p class="inline">income:</p>
-                        <input type="text" placeholder="income money">
+                        <p class="font-semibold inline">income:</p>
+                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="income money">
                     </div>
+
+                    <!-- expenses calculation -->
                     <h3 class="text-center text-3xl font-semibold mb-4">Expenses</h3>
-                    <div class="px-auto mb-4">
-                        <p class="inline">Food:</p>
-                        <input type="text" placeholder="food">
+                    <div class=" mb-4">
+                        <p class="font-semibold inline">Food:</p>
+                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="food">
                     </div>
                     <div class="mb-4">
-                        <p class="inline">Rent:</p>
-                        <input type="text" placeholder="rent">
+                        <p class="font-semibold inline">Rent:</p>
+                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="rent">
                     </div>
                     <div class="mb-4">
-                        <p class="inline">Clothes:</p>
-                        <input type="text" placeholder="clothes">
+                        <p class="font-semibold inline">Clothes:</p>
+                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="clothes">
                     </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Calculate
+                    </button>
+
+                    <!-- balance -->
+                    <h3 class="text-center text-3xl font-semibold mb-4">Total Expenses: € <span>00</span></h3>
+                    <h3 class="text-center text-3xl font-semibold mb-4">Balance: € <span>00</span></h3>
+
+                    <!-- saving calculation -->
+                    <div class="mb-4">
+                        <p class="font-semibold inline">Save:</p>
+                        <input type="text" class="border border-gray-400 rounded px-2" placeholder="clothes">
+                        <p class=" inline">%</p>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Save
+                        </button>
+
+                    </div>
+
+                    <!-- saving and remaining balance -->
+                    <h3 class="text-center text-3xl font-semibold mb-4">Saving Amount: € <span>00</span></h3>
+                    <h3 class="text-center text-3xl font-semibold mb-4 pb-5">Remaining Balance: € <span>00</span></h3>
                 </div>
             </div>
         </section>
