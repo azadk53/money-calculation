@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balance Sheet</title>
+    <!-- tailwind script -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -23,14 +24,14 @@
                 <img class="md:h-screen" src="image/balance.jpg" alt="">
             </div>
 
-            <!-- statement -->
+            <!-- balance statement -->
             <div class="md:h-screen bg-slate-200 mt-10 rounded mx-5 md:mr-5">
                 <div class="flex flex-col items-center">
 
                     <!-- income -->
                     <h3 class="text-center text-3xl font-semibold mb-4 pt-5">Income</h3>
                     <div class="mb-4">
-                        <p class="font-semibold inline">income:</p>
+                        <p class="font-semibold inline">Income:</p>
                         <input id="income" type="text" class="border border-gray-400 rounded px-2"
                             placeholder="income money">
                     </div>
@@ -77,30 +78,33 @@
                     </h3>
                     <h3 class="text-center text-2xl font-bold mb-4 pb-5">Remaining Balance: € <span
                             id="remaining-balance">00</span></h3>
+
+                </div>
+                <!-- error messages -->
+                <div class="flex justify-end gap-2">
+                    <p id="error-number" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">
+                        please
+                        input
+                        positive
+                        number
+                    </p>
+                    <p id="error-string" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">
+                        please
+                        input number
+                    </p>
+                    <p id="error-expenses" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">
+                        Your
+                        income is low.
+                    </p>
+                    <p id="error-saving" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">
+                        Balance is
+                        low.
+                    </p>
                 </div>
             </div>
         </section>
-
-        <!-- error messages -->
-        <div class="flex justify-end gap-2">
-            <p id="error-number" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">please
-                input
-                positive
-                number
-            </p>
-            <p id="error-string" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">please
-                input number
-            </p>
-            <p id="error-expenses" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">Your
-                income is low.
-            </p>
-            <p id="error-saving" class="hidden bg-slate-800 text-center px-2 w-1/4 text-white  rounded py-4">Balance is
-                low.
-            </p>
-        </div>
     </main>
-
-
+    <!-- javascript event handling -->
     <script src="js/app.js"></script>
 </body>
 
